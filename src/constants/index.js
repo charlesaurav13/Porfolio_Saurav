@@ -126,7 +126,7 @@ const projects = [
       },
     ],
     image: movie,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://moviewebsite13.netlify.app/",
   },
   {
     name: "Unsplash Website",
