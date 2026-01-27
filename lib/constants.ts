@@ -19,6 +19,7 @@ const tailwind = "/assets/tech/tailwind.png";
 const blog = "/assets/blog.png";
 const unsplash = "/assets/unsplash.png";
 const movie = "/assets/movie.png";
+const trading = "/assets/trading.png";
 
 export const navLinks = [
   {
@@ -152,5 +153,30 @@ export const projects = [
     ],
     image: unsplash,
     source_code_link: "https://image-gallery-two-pi.vercel.app/",
+  },
+  {
+    name: "Trading Data Service",
+    description:
+      "A comprehensive Go-based financial market analysis system with news impact correlation on Bitcoin prices. Features real-time BTC data, technical indicators, news aggregation from GNews/CryptoPanic APIs, and Python-based statistical analysis for volatility patterns and keyword impact.",
+    tags: [
+      {
+        name: "golang",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "python",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "bitcoin",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: trading,
+    source_code_link: "https://github.com/charlesaurav13/trading/tree/develop_xgboost",
   },
 ];
