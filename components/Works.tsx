@@ -45,6 +45,8 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
             fill
             sizes="(max-width: 768px) 100vw, 360px"
+            priority={index < 2}
+            quality={85}
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
