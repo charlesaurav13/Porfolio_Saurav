@@ -80,6 +80,66 @@ pnpm build
 pnpm start
 ```
 
+### Quick Start Script
+
+Use the interactive setup script:
+
+```bash
+./start.sh
+```
+
+Choose from:
+1. Development mode
+2. Production build
+3. Docker build  
+4. Docker Compose
+
+## 🐳 Docker Deployment
+
+### Using Docker Compose (Recommended)
+### Vercel (Recommended - Zero Config)
+
+```bash
+vercel
+```
+
+### Docker Deployment
+
+See [DOCKER_GUIDE.md](./DOCKER_GUIDE.md) for complete instructions.
+
+```bash
+# Quick start with Docker Compose
+docker-compose up -d
+```
+
+### Other Platforms
+
+This project can be deployed on:
+- **Vercel** (recommended - zero config)
+- **Docker** (on any VPS)
+- **AWS ECS/Fargate**
+- **Google Cloud Run**
+- **Azure Container Instances**
+- **Kubernetes**
+- **Netlify**
+- Any Node.js hosting platform
+
+### Production Build
+
+```bash
+# Build for production
+pnpm build
+
+# The output will be in the .next folder
+# Standalone output enabled for minimal Docker images
+```
+
+See [BUILD_SUMMARY.md](./BUILD_SUMMARY.md) for build details and deployment options.un
+docker run -d -p 3000:3000 --name saurav-portfolio saurav-portfolio:latest
+```
+
+See [DOCKER_GUIDE.md](./DOCKER_GUIDE.md) for comprehensive Docker documentation.
+
 ## 🌐 Development Server
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
