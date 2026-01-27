@@ -16,7 +16,6 @@ const mongodb = "/assets/tech/mongodb.png";
 const nodejs = "/assets/tech/nodejs.png";
 const reactjs = "/assets/tech/reactjs.png";
 const tailwind = "/assets/tech/tailwind.png";
-const blog = "/assets/blog.png";
 const unsplash = "/assets/unsplash.png";
 const movie = "/assets/movie.png";
 const trading = "/assets/trading.png";
@@ -91,27 +90,6 @@ export const technologies = [
 ];
 
 export const projects = [
-  {
-    name: "Blog Website",
-    description:
-      "This is a blog website where you can edit,delete posts and see others posts with login and register functionalities.This project is made with ReactJS for the Front-end Development and NodeJS as a Backend.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: blog,
-    source_code_link: "https://github.com/charlesaurav13/Blog_Website",
-  },
   {
     name: "Movie Website",
     description:
