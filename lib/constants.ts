@@ -1,23 +1,24 @@
-import logo from "@/public/assets/logo.svg";
-import backend from "@/public/assets/backend.png";
-import creator from "@/public/assets/creator.png";
-import mobile from "@/public/assets/mobile.png";
-import web from "@/public/assets/web.png";
-import github from "@/public/assets/github.png";
-import menu from "@/public/assets/menu.svg";
-import close from "@/public/assets/close.svg";
+// Using string paths for Next.js optimization
+const logo = "/assets/logo.svg";
+const backend = "/assets/backend.png";
+const creator = "/assets/creator.png";
+const mobile = "/assets/mobile.png";
+const web = "/assets/web.png";
+const github = "/assets/github.png";
+const menu = "/assets/menu.svg";
+const close = "/assets/close.svg";
 
-import css from "@/public/assets/tech/css.png";
-import git from "@/public/assets/tech/git.png";
-import html from "@/public/assets/tech/html.png";
-import javascript from "@/public/assets/tech/javascript.png";
-import mongodb from "@/public/assets/tech/mongodb.png";
-import nodejs from "@/public/assets/tech/nodejs.png";
-import reactjs from "@/public/assets/tech/reactjs.png";
-import tailwind from "@/public/assets/tech/tailwind.png";
-import blog from "@/public/assets/blog.png";
-import unsplash from "@/public/assets/unsplash.png";
-import movie from "@/public/assets/movie.png";
+const css = "/assets/tech/css.png";
+const git = "/assets/tech/git.png";
+const html = "/assets/tech/html.png";
+const javascript = "/assets/tech/javascript.png";
+const mongodb = "/assets/tech/mongodb.png";
+const nodejs = "/assets/tech/nodejs.png";
+const reactjs = "/assets/tech/reactjs.png";
+const tailwind = "/assets/tech/tailwind.png";
+const blog = "/assets/blog.png";
+const unsplash = "/assets/unsplash.png";
+const movie = "/assets/movie.png";
 
 export const navLinks = [
   {

@@ -6,7 +6,10 @@ import Image from "next/image";
 
 import { styles } from "@/lib/styles";
 import { navLinks } from "@/lib/constants";
-import { logo, menu, close } from "@/public/assets";
+
+const logo = "/assets/logo.svg";
+const menu = "/assets/menu.svg";
+const close = "/assets/close.svg";
 
 const Navbar = () => {
   const [active, setActive] = useState("");

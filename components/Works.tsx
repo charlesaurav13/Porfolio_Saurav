@@ -6,10 +6,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { styles } from "@/lib/styles";
-import { github } from "@/public/assets";
 import { SectionWrapper } from "@/lib/hoc";
 import { projects } from "@/lib/constants";
 import { fadeIn, textVariant } from "@/lib/motion";
+
+const github = "/assets/github.png";
 
 interface ProjectCardProps {
   index: number;

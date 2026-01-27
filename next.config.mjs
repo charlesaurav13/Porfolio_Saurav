@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   
+  // Enable standalone output for Docker
+  output: 'standalone',
+  
   // Optimize images
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -38,11 +41,6 @@ const nextConfig = {
   // Compiler optimizations
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
-  },
-
-  // Performance optimizations
-  experimental: {
-    optimizeCss: true,
   },
 };
 
