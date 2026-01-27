@@ -2,14 +2,18 @@ import './globals.css';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Saurav - Web Developer & ML Engineer',
-  description: 'Portfolio of Saurav - Machine Learning Engineer and Web Developer specializing in React, Node.js, and AI',
-  keywords: ['web developer', 'machine learning', 'react', 'nextjs', 'portfolio'],
-  authors: [{ name: 'Saurav' }],
+  title: 'Saurav Pandey | Full Stack & ML Engineer',
+  description: 'Portfolio showcasing projects in React, Next.js, Go, Python, Bitcoin Trading Analysis, and Machine Learning',
+  keywords: ['Saurav Pandey', 'Full Stack Developer', 'ML Engineer', 'React', 'Next.js', 'Go', 'Python', 'Bitcoin', 'Trading Analysis', 'Portfolio'],
+  authors: [{ name: 'Saurav Pandey' }],
   openGraph: {
-    title: 'Saurav - Web Developer & ML Engineer',
-    description: 'Portfolio of Saurav showcasing web development and machine learning projects',
+    title: 'Saurav Pandey | Full Stack & ML Engineer',
+    description: 'Portfolio showcasing projects in React, Go, Python, and Machine Learning',
     type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
