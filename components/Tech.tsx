@@ -19,9 +19,9 @@ const BallCanvas = dynamic(
 
 const Tech = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
+    <div className='flex flex-row flex-wrap justify-center gap-10' role='list' aria-label='Technologies I work with'>
       {technologies.map((technology, index) => (
-        <div className='w-28 h-28 cursor-pointer' key={technology.name}>
+        <div className='w-28 h-28 cursor-pointer' key={technology.name} role='listitem' aria-label={technology.name}>
           <Suspense fallback={<div className='w-28 h-28 bg-tertiary rounded-full animate-pulse' />}>
             <BallCanvas icon={technology.icon} />
           </Suspense>

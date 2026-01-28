@@ -37,10 +37,10 @@ const ServiceCard = ({ index, title, icon }: { index: number; title: string; ico
 
 const About = () => {
   return (
-    <>
+    <section aria-labelledby="about-heading">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 id="about-heading" className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
@@ -60,7 +60,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

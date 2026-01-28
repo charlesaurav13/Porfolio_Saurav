@@ -50,18 +50,19 @@ const ProjectCard = ({
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
+            <button
               onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              aria-label={`View source code for ${name}`}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border-0 p-0'
             >
               <Image
                 src={github}
-                alt='source code'
+                alt=''
                 className='w-1/2 h-1/2 object-contain'
                 width={20}
                 height={20}
               />
-            </div>
+            </button>
           </div>
         </div>
 
@@ -87,10 +88,10 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <div>
+    <section aria-labelledby="projects-heading">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <h2 id="projects-heading" className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -111,7 +112,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
