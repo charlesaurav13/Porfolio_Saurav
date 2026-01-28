@@ -47,11 +47,12 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0);
           }}
+          aria-label="Home - Saurav Pandey Portfolio"
         >
           <Image 
             src={logo} 
             style={{mixBlendMode:"inherit", borderRadius:"25%"}} 
-            alt='logo' 
+            alt='Saurav Pandey logo' 
             className='w-[3.5rem] h-9 object-contain' 
             width={56}
             height={36}
@@ -63,7 +64,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10' role='navigation' aria-label='Main navigation'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -72,25 +73,35 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`} aria-label={`Navigate to ${nav.title} section`}>{nav.title}</a>
             </li>
           ))}
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <Image
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain cursor-pointer'
+          <button
             onClick={() => setToggle(!toggle)}
-            width={28}
-            height={28}
-          />
+            aria-label={toggle ? 'Close menu' : 'Open menu'}
+            aria-expanded={toggle}
+            aria-controls='mobile-menu'
+            className='w-[28px] h-[28px] cursor-pointer bg-transparent border-0 p-0'
+          >
+            <Image
+              src={toggle ? close : menu}
+              alt=''
+              className='w-[28px] h-[28px] object-contain'
+              width={28}
+              height={28}
+            />
+          </button>
 
           <div
+            id='mobile-menu'
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            role='navigation'
+            aria-label='Mobile navigation'
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
@@ -104,7 +115,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`} aria-label={`Navigate to ${nav.title} section`}>{nav.title}</a>
                 </li>
               ))}
             </ul>
